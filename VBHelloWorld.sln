@@ -2,18 +2,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project({F184B08F-C81C-45F6-A57F-5ABD9991F28F}) = VBHelloWorld, VBHelloWorldVBHelloWorld.vbproj, {4DCEC446-7156-4FE6-8CCC-219E34DD409D}
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBHelloWorld", "VBHelloWorld\VBHelloWorld.vbproj", "{4DCEC446-7156-4FE6-8CCC-219E34DD409D}"
 EndProject
 Global
   GlobalSection(SolutionConfigurationPlatforms) = preSolution
-    DebugAny CPU = DebugAny CPU
-    ReleaseAny CPU = ReleaseAny CPU
+    Debug|Any CPU = Debug|Any CPU
+    Release|Any CPU = Release|Any CPU
   EndGlobalSection
   GlobalSection(ProjectConfigurationPlatforms) = postSolution
-    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.DebugAny CPU.ActiveCfg = DebugAny CPU
-    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.DebugAny CPU.Build.0 = DebugAny CPU
-    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.ReleaseAny CPU.ActiveCfg = ReleaseAny CPU
-    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.ReleaseAny CPU.Build.0 = ReleaseAny CPU
+    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {4DCEC446-7156-4FE6-8CCC-219E34DD409D}.Release|Any CPU.Build.0 = Release|Any CPU
   EndGlobalSection
   GlobalSection(SolutionProperties) = preSolution
     HideSolutionNode = FALSE
