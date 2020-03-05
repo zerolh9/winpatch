@@ -4,13 +4,14 @@ env:
   variables:
     SOLUTION: .\VBHelloWorld.sln
     PACKAGE_DIRECTORY: .\packages
-    DOTNET_FRAMEWORK: 4.6.2
+    DOTNET_FRAMEWORK: 4.8
 
 phases:
   build:
     commands:
-      - '& "C:\ProgramData\chocolatey\bin\NuGet.exe" restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY'
-      - '& "C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" -p:FrameworkPathOverride="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v$env:DOTNET_FRAMEWORK" $env:SOLUTION'
+      - 'ver'
+      - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY -verbosity detailed'
+      - '& "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\bin\msbuild.exe" $env:SOLUTION'
 artifacts:
   files:
     - .\VBHelloWorld\bin\Debug\*
