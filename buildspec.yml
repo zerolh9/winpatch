@@ -9,7 +9,8 @@ env:
 phases:
   build:
     commands:
-      - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY -verbosity detailed'
+      - '& "C:\ProgramData\chocolatey\bin\NuGet.exe" restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY'
+#       - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY -verbosity detailed'
       - 'msbuild $env:SOLUTION'
 artifacts:
   files:
