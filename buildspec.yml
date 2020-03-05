@@ -9,8 +9,7 @@ env:
 phases:
   build:
     commands:
-      - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY'
-#       - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY -verbosity detailed'
+      - 'nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY -verbosity detailed'
       - 'msbuild $env:SOLUTION'
 artifacts:
   files:
